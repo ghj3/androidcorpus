@@ -65,14 +65,15 @@
 				android:layout_marginLeft="5dip"
 				android:id="@+id/button_endOut"
 				android:text="@string/out_end"></Button>
+
+			<Button
+			    android:id="@+id/Button_settings"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="5px"
+			    android:background="@android:drawable/ic_menu_manage" />
+
 		</LinearLayout>
 	</LinearLayout>
-	<Button
-		android:layout_height="wrap_content"
-		android:id="@+id/Button_settings"
-		android:background="@android:drawable/ic_menu_manage"
-		android:layout_width="wrap_content"
-		android:layout_alignParentBottom="true"
-		android:layout_alignParentRight="true"
-		android:layout_margin="5px"></Button>
+
 </RelativeLayout>
