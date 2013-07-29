@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string	name="app_name">corpus</string>
+	<string name="OK">OK</string>
+	<string name="cancel">CANCEL</string>
+	<string name="work_start">出勤</string>
+	<string name="work_end">退勤</string>
+	<string name="out_start">外出</string>
+	<string name="out_end">再入</string>
+	<string name="loading">しばらくお待ちください&#8230;</string>
+	<string name="confirm">送信してよろしいですか？</string>
+	<string name="accepted">受け付けました。</string>
+	<string name="company_cd">会社コードの設定</string>
+    <string name="input_company_cd">会社コードを入力</string>
+	<string name="user_id">ユーザーIDの設定</string>
+	<string name="input_user_id">ユーザーIDを入力</string>
+	<string name="password">パスワードの設定</string>
+	<string name="input_password">パスワードを入力</string>
+	<string name="setting">利用者設定</string>
+	<string name="current_setting">現在の設定</string>
+	<string name="aleat_setting">利用者設定を行ってください。</string>
+	<string name="error">エラー</string>
+	<string name="error_login">利用者情報が間違っています。</string>
+	<string name="error_input">無効な入力です。</string>
+	<string name="error_unknown">エラーが発生しました。</string>
+	<string name="error_location">位置情報を取得できませんでした。</string>
+	<string name="error_gps">位置情報を取得できませんでした。\n設定を確認して下さい。</string>
+	<string name="error_network">ネットワークに接続できません。\n設定を確認して下さい。</string>
+	<string name="digitalclock">デジタル時計</string>
+	<string name="dummy">ダミー</string>
+</resources>

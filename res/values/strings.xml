@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">corpus</string>
+    <string name="OK">OK</string>
+    <string name="CANCEL">Cancel</string>
+    <string name="work_start">work start</string>
+    <string name="work_end">work end</string>
+    <string name="out_start">out start</string>
+    <string name="out_end">out end</string>
+    <string name="loading">Please wait&#8230;</string>
+    <string name="confirm">Would you like to send?</string>
+    <string name="accepted">Accepted.</string>
+    <string name="company_cd">Set company code</string>
+    <string name="input_company_cd">Please enter the company code.</string>
+    <string name="user_id">Set user ID</string>
+    <string name="input_user_id">Please enter the user ID.</string>
+    <string name="password">Set password</string>
+    <string name="input_password">Please enter the password.</string>
+    <string name="setting">User Settings</string>
+    <string name="current_setting">current setting</string>
+    <string name="aleat_setting">Please enter your user settings.</string>
+    <string name="error">ERROR</string>
+    <string name="error_login">User information is incorrect.</string>
+    <string name="error_input">Invalid input.</string>
+    <string name="error_unknown">The error occurred. </string>
+    <string name="error_location">Could not get location information.</string>
+    <string name="error_gps">Could not get location information.\nPlease check your settings.</string>
+    <string name="error_network">Can not connect to the network.\nPlease check your settings.</string>
+    <string name="digitalclock">DigitalClock</string>
+    <string name="dummy">DUMMY</string>
+</resources>

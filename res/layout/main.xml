@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/background">
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:id="@+id/LinearLayout1"
+		android:orientation="vertical"
+		android:layout_height="fill_parent"
+		android:gravity="center">
+		<TextView
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:id="@+id/textView_date"
+			android:textSize="23sp"
+			android:text="@string/confirm"
+			android:layout_marginTop="10dp"
+			android:layout_width="wrap_content" />
+		<DigitalClock
+			android:layout_gravity="center"
+			android:textStyle="bold"
+			android:text="@string/digitalclock"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/digitalClock1"
+			android:textSize="50sp" />
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:id="@+id/linearLayout1_1"
+			android:layout_marginTop="20dip"
+			android:layout_height="wrap_content"
+			android:gravity="center">
+			<Button
+				android:id="@+id/button_startWork"
+				android:layout_width="wrap_content"
+				android:text="@string/work_start"
+				android:width="100dip"
+				android:layout_height="wrap_content"
+				android:height="60dip"
+				android:layout_marginRight="5dip" />
+			<Button
+				android:id="@+id/button_endWork"
+				android:layout_width="wrap_content"
+				android:text="@string/work_end"
+				android:width="100dip"
+				android:layout_height="wrap_content"
+				android:height="60dip"
+				android:layout_marginLeft="5dip" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:id="@+id/linearLayout1_2"
+			android:layout_marginTop="20dip"
+			android:layout_height="wrap_content"
+			android:gravity="center">
+			<Button
+				android:id="@+id/button_startOut"
+				android:layout_width="wrap_content"
+				android:text="@string/out_start"
+				android:width="100dip"
+				android:layout_height="wrap_content"
+				android:height="60dip"
+				android:layout_marginRight="5dip" />
+			<Button
+				android:id="@+id/button_endOut"
+				android:layout_width="wrap_content"
+				android:text="@string/out_end"
+				android:width="100dip"
+				android:layout_height="wrap_content"
+				android:height="60dip"
+				android:layout_marginLeft="5dip" />
+		</LinearLayout>
+	</LinearLayout>
+	<Button
+		android:layout_height="wrap_content"
+		android:id="@+id/Button_settings"
+		android:background="@android:drawable/ic_menu_manage"
+		android:layout_width="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_margin="5dp" />
+</RelativeLayout>
