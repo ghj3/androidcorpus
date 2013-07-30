@@ -23,8 +23,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.telephony.TelephonyManager;
+import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.DigitalClock;
@@ -60,7 +62,10 @@ public class MainActivity extends Activity implements LocationListener {
 		setContentView(R.layout.main);
 		// AdMobのViewを作成
 		adView = new AdView(this, AdSize.BANNER, "a151f535f3d5c21");
+		adView.setLayoutParams(new LayoutParams(LinearLayout.LayoutParams.FILL_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT));
+//		adView.setGravity(Gravity.BOTTOM);
 		LinearLayout layout = (LinearLayout) findViewById(R.id.LinearLayout1);
+		layout.setGravity(Gravity.BOTTOM);
 		layout.addView(adView);
 
 		// 広告の表示を開始
