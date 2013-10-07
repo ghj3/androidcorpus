@@ -61,7 +61,7 @@ public class MainActivity extends Activity implements LocationListener {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.main);
 		// AdMobのViewを作成
-		adView = new AdView(this, AdSize.BANNER, "a151f535f3d5c21");
+		adView = new AdView(this, AdSize.BANNER, "ca-app-pub-4616233997277403/7981774774");
 		adView.setLayoutParams(new LayoutParams(LinearLayout.LayoutParams.FILL_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT));
 //		adView.setGravity(Gravity.BOTTOM);
 		LinearLayout layout = (LinearLayout) findViewById(R.id.LinearLayout1);
