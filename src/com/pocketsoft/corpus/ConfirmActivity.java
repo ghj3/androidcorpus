@@ -103,7 +103,6 @@ public class ConfirmActivity extends Activity {
 				 * テスト環境：http://182.48.35.169/s2corpus/view/working/stamp.html
 				 */
 				// GET送信するデータを準備
-				String phonenumber = Settings.getPhoneNumber(getBaseContext());
 				String url = "http://s2corpus.ps-corpus.com/view/working/stamp.html";
 				String param = "?companyCd="
 						+ Settings.getCompanyCd(getBaseContext())
@@ -150,15 +149,16 @@ public class ConfirmActivity extends Activity {
 
 	public String getInputStreamFromUrl(String url) {
 		String content = null;
+		HttpClient httpclient = null;
 		try {
 			Log.i("Log", "GETリクエストを送信");
 			HttpGet httpGet = new HttpGet(url);
 			HttpParams httpParms = new BasicHttpParams();
 			httpParms.setIntParameter(CoreConnectionPNames.CONNECTION_TIMEOUT,
-					3000);
-			httpParms.setIntParameter(CoreConnectionPNames.SO_TIMEOUT, 5000);
+					30000);
+			httpParms.setIntParameter(CoreConnectionPNames.SO_TIMEOUT, 50000);
 
-			HttpClient httpclient = new DefaultHttpClient(httpParms);
+			httpclient = new DefaultHttpClient(httpParms);
 			HttpResponse response = httpclient.execute(httpGet);
 			ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 			response.getEntity().writeTo(byteArrayOutputStream);
@@ -170,6 +170,11 @@ public class ConfirmActivity extends Activity {
 		} catch (Exception e) {
 			Log.e("Log", "HttpExceptionが発生");
 			return null;
+		} finally {
+			if (httpclient != null) {
+				httpclient.getConnectionManager().shutdown();
+				httpclient = null;
+			}
 		}
 		Log.i("Log", "GET送信終了");
 		return content;
